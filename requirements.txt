@@ -1,0 +1,30 @@
+# NBA Data Analysis Project Requirements
+
+# Data manipulation and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Web scraping and API requests
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# NBA-specific packages
+nba-api>=1.1.14
+
+# Jupyter notebook (optional for data exploration)
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# Data storage
+sqlite3
+
+# Testing
+pytest>=7.0.0
+
+# Code formatting
+black>=23.0.0
