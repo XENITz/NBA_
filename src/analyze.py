@@ -3,8 +3,8 @@ Quick analysis script for NBA predictions
 Run this to analyze specific matchups and players
 """
 
-from main import NBADataExtractor
-from prediction_model import AdvancedPredictor, generate_betting_insights
+from .main import NBADataExtractor
+from .prediction_model import AdvancedPredictor, generate_betting_insights
 import sys
 
 def analyze_matchup(home_team, away_team, key_players=None):

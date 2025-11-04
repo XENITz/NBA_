@@ -6,6 +6,9 @@ from datetime import datetime, timedelta
 import json
 import time
 import numpy as np
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
 from team_fallback_data import get_team_fallback_stats
 
 class NBADataExtractor:

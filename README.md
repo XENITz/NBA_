@@ -1,109 +1,215 @@
-# 🏀 NBA Data Analysis & Match Prediction System
+# 🏀 NBA Prediction System# 🏀 NBA Data Analysis & Match Prediction System
 
-A comprehensive NBA analytics tool that extracts live game data, analyzes player and team performance, and generates match predictions with probability insights.
 
-## 🎯 What Can You Do?
 
-- **📊 Get Today's NBA Games** - See all games scheduled for today
+**Advanced NBA game prediction system with real-time data, head-to-head analysis, defensive stats, and fatigue tracking.**A comprehensive NBA analytics tool that extracts live game data, analyzes player and team performance, and generates match predictions with probability insights.
+
+
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)## 🎯 What Can You Do?
+
+
+
+---- **📊 Get Today's NBA Games** - See all games scheduled for today
+
 - **👤 Analyze Any Player** - Get recent stats and performance predictions
-- **🏆 Predict Match Outcomes** - Win probabilities, expected scores, betting insights
+
+## 📁 Project Structure- **🏆 Predict Match Outcomes** - Win probabilities, expected scores, betting insights
+
 - **📈 Track Team Performance** - Recent form, shooting efficiency, win rates
-- **🎲 Fantasy Sports Help** - Player performance predictions and insights
 
-## ⚡ Quick Start
+```- **🎲 Fantasy Sports Help** - Player performance predictions and insights
 
-```powershell
-# 1. Activate virtual environment
-.\venv\Scripts\Activate.ps1
+NBA_/
 
-# 2. Run interactive mode
-python analyze.py
+├── src/                                    # Source code## ⚡ Quick Start
 
-# 3. Try these commands:
-> today                              # See today's games
-> player LeBron James                # Analyze a player
-> matchup Lakers vs Warriors         # Predict a game
+│   ├── main.py                            # Core NBA data extraction
+
+│   ├── prediction_model.py               # Prediction algorithms```powershell
+
+│   ├── advanced_enhanced_predictor.py    # Complete predictor# 1. Activate virtual environment
+
+│   └── ....\venv\Scripts\Activate.ps1
+
+│
+
+├── docs/                                   # Documentation# 2. Run interactive mode
+
+│   ├── NEW_FEATURES_GUIDE.md             # Feature docspython analyze.py
+
+│   ├── QUICK_START.md                    # Quick reference
+
+│   └── ...# 3. Try these commands:
+
+│> today                              # See today's games
+
+├── tests/                                  # Test files> player LeBron James                # Analyze a player
+
+├── scripts/                                # Utility scripts> matchup Lakers vs Warriors         # Predict a game
+
+├── data/                                   # Data storage```
+
+│
+
+├── predict.py                              # 🎯 Main prediction script**📖 [Read the Quick Start Guide](QUICK_START.md)** for step-by-step instructions.
+
+├── quick_analyze.py                        # ⚡ Quick analysis
+
+└── requirements.txt                        # Dependencies## 📦 Installation
+
 ```
-
-**📖 [Read the Quick Start Guide](QUICK_START.md)** for step-by-step instructions.
-
-## 📦 Installation
 
 ### Virtual Environment Setup
-A virtual environment has been created with all dependencies:
 
-```powershell
+---A virtual environment has been created with all dependencies:
+
+
+
+## 🚀 Quick Start```powershell
+
 # Activate the virtual environment
-.\venv\Scripts\Activate.ps1
 
-# Or use the convenience script
-.\activate_env.ps1
-```
+### **Run Predictions**.\venv\Scripts\Activate.ps1
 
-### Installed Packages
-- **nba-api** - Official NBA data API wrapper
-- **pandas** - Data manipulation and analysis
-- **numpy** - Numerical computing
-- **matplotlib** & **seaborn** - Data visualization
+
+
+```powershell# Or use the convenience script
+
+# Activate environment.\activate_env.ps1
+
+.\venv\Scripts\Activate```
+
+
+
+# Predict any matchup### Installed Packages
+
+python predict.py "Lakers" "Warriors"- **nba-api** - Official NBA data API wrapper
+
+python predict.py "Celtics" "Heat"- **pandas** - Data manipulation and analysis
+
+python predict.py "Bucks" "Pacers"- **numpy** - Numerical computing
+
+```- **matplotlib** & **seaborn** - Data visualization
+
 - **requests** - HTTP requests
-- **jupyter** - Interactive notebook environment
 
-## 💻 Usage Examples
+---- **jupyter** - Interactive notebook environment
 
-### 1. Interactive Mode (Easiest)
+
+
+## ✨ Features## 💻 Usage Examples
+
+
+
+### **8-Factor Prediction Model**### 1. Interactive Mode (Easiest)
+
 ```powershell
-python analyze.py
-```
 
-### 2. Command Line
-```powershell
-# Show today's games
-python analyze.py today
+- ✅ Recent Form (25%)python analyze.py
+
+- ✅ Offensive Power (18%)```
+
+- ✅ Shooting Efficiency (15%)
+
+- ✅ **Defensive Strength (15%)** - Points allowed### 2. Command Line
+
+- ✅ Home Court (12%)```powershell
+
+- ✅ **Head-to-Head (10%)** - Historical matchups# Show today's games
+
+- ✅ **Rest Advantage (5%)** - Back-to-back detectionpython analyze.py today
+
+- ✅ Player Impact (5%)
 
 # Analyze a player
-python analyze.py player "Stephen Curry"
 
-# Predict a matchup
-python analyze.py matchup "Lakers" "Warriors" "LeBron James,Stephen Curry"
-```
+### **Real 2024-25 Season Data**python analyze.py player "Stephen Curry"
 
-### 3. Run Example Analysis
+
+
+- 82 games per team# Predict a matchup
+
+- Live updatespython analyze.py matchup "Lakers" "Warriors" "LeBron James,Stephen Curry"
+
+- Actual game results```
+
+
+
+---### 3. Run Example Analysis
+
 ```powershell
-python main.py
+
+## 📊 Example Outputpython main.py
+
 ```
 
-### 4. Custom Python Script
-```python
-from main import NBADataExtractor
-from prediction_model import AdvancedPredictor
+```
 
-extractor = NBADataExtractor()
-predictor = AdvancedPredictor()
+🏆 PREDICTED WINNER: Los Angeles Lakers### 4. Custom Python Script
 
-# Get today's games
-games = extractor.get_todays_games()
+   Win Probability: 72.59%```python
 
-# Analyze a player
+   Predicted Score: Lakers 120, Warriors 117from main import NBADataExtractor
+
+   Confidence: HIGHfrom prediction_model import AdvancedPredictor
+
+
+
+Key Factors:extractor = NBADataExtractor()
+
+   ✅ Home Court Advantagepredictor = AdvancedPredictor()
+
+   ✅ Won 3 of last 4 vs Warriors
+
+   ✅ Better offensive efficiency# Get today's games
+
+```games = extractor.get_todays_games()
+
+
+
+---# Analyze a player
+
 stats = extractor.get_player_recent_stats("Kevin Durant")
 
+## 📖 Documentation
+
 # Predict a match
-home = extractor.get_team_recent_performance("Celtics")
-away = extractor.get_team_recent_performance("Bucks")
-prediction = predictor.predict_match_outcome(home, away)
-```
 
-## 📊 Example Output
+See `docs/` folder:home = extractor.get_team_recent_performance("Celtics")
 
-```
+- **NEW_FEATURES_GUIDE.md** - All features explainedaway = extractor.get_team_recent_performance("Bucks")
+
+- **QUICK_START.md** - Quick referenceprediction = predictor.predict_match_outcome(home, away)
+
+- **USAGE_GUIDE.md** - Examples```
+
+
+
+---## 📊 Example Output
+
+
+
+## 🎯 Available Teams```
+
 ==================================================================
-                  MATCH PREDICTION ANALYSIS
-                   Warriors @ Lakers
-==================================================================
+
+All 30 NBA teams supported:                  MATCH PREDICTION ANALYSIS
+
+- Lakers, Warriors, Celtics, Heat, Bucks, Pacers                   Warriors @ Lakers
+
+- Nuggets, Suns, 76ers, Knicks, Mavericks==================================================================
+
+- And 19 more...
 
 🏆 PREDICTED WINNER: Lakers
-   Confidence Level: Medium
 
-📊 WIN PROBABILITIES:
+---   Confidence Level: Medium
+
+
+
+**🏀 Built with real NBA data for accurate predictions!**📊 WIN PROBABILITIES:
+
    Los Angeles Lakers: 57.3%
    Golden State Warriors: 42.7%
 

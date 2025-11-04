@@ -3,8 +3,8 @@ Enhanced NBA Prediction with Player Lineup Consideration
 Checks if key players are playing and adjusts predictions accordingly
 """
 
-from main import NBADataExtractor
-from prediction_model import AdvancedPredictor, generate_betting_insights
+from .main import NBADataExtractor
+from .prediction_model import AdvancedPredictor, generate_betting_insights
 from nba_api.live.nba.endpoints import scoreboard
 import time
 

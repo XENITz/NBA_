@@ -7,6 +7,10 @@ ADVANCED NBA PREDICTOR with ALL NEW FEATURES
 - Enhanced Prediction Algorithm
 """
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+
 from main import NBADataExtractor
 from prediction_model import AdvancedPredictor
 from nba_api.live.nba.endpoints import scoreboard
